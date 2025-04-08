@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(143, 196, 243);
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-areas: 'header header header',
+                         'sidebar content content',
+                         'footer footer footer';
+}
+
+.header-container{grid-area: 'header'; background-color: aliceblue;}
+.main-container{grid-area: 'content';}
+.side-bar{grid-area: 'sidebar'; background-color: rgb(196, 220, 241);}
+.footer-container{grid-area: 'footer'; background-color: aliceblue;}
+
+.header-container h1{
+    color: rgb(88, 169, 240);
+    text-align: center;
+    font-size: 50px;
+}
+
+nav{
+    text-align: center;
+    color: #333;
+    padding: 10px;
+}
+
+nav a{
+    color: #333;
+}
+
+h2{
+    font-size: 25px;
+}
+
+.recipes-container, .about-container, .contact-container{
+    color: #333;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.recipes-container ul{
+    padding: 10px;
+}
+
+.img-container{
+    width: 500px;
+    height: 380px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.img-container img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-container h2{
+    color: #333;
+}
+
+.contact-container li{
+    color: white;
+    margin-bottom: 5px;
+}
+
+.contact-container a{
+    color: white;
+}
+
+.footer-container p{
+    text-align: center;
+}
